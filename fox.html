@@ -12,8 +12,15 @@
    <script>
     window.alert("WARNING: This website contains high levels of dankness. Enter at your own risk.");
   </script>
-  <canvas id="myCanvas" width="200" height="100" style="border:10px solid #000000;"> <h1>Fox's Page</h1></canvas>
-
+  <center>
+  <canvas id="myCanvas" width="220" height="80" style="border:10px solid #000000;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "40px Arial";
+ctx.strokeText("Fox's Page",10,50);
+    </script></center>
    <fieldset>
     <legend>Type whatever you want here I guess</legend>
     <input type="text" size="30">
