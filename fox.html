@@ -12,8 +12,8 @@
    <script>
     window.alert("WARNING: This website contains high levels of dankness. Enter at your own risk.");
   </script>
-  
-  <h1>Fox's Page</h1>
+  <canvas id="myCanvas" width="200" height="100" style="border:10px solid #000000;"> <h1>Fox's Page</h1></canvas>
+
    <fieldset>
     <legend>Type whatever you want here I guess</legend>
     <input type="text" size="30">
@@ -32,6 +32,11 @@ function myTimer() {
 <script>
 document.getElementById("lang").innerHTML =
 "Your browser's language is " + navigator.language + ".";
+</script>
+  <p>Here is a random number for you!</p>
+<p id="random"></p>
+<script>
+document.getElementById("random").innerHTML = Math.random();
 </script>
 <div id="containerButton">
             <form action="/index.html">
