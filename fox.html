@@ -27,7 +27,12 @@ function myTimer() {
     document.getElementById("demo").innerHTML = d.toLocaleTimeString();
 }
 </script>
-  
+  <p id="lang"></p>
+
+<script>
+document.getElementById("lang").innerHTML =
+"Your browser's language is " + navigator.language + ".";
+</script>
 <div id="containerButton">
             <form action="/index.html">
                 <button>Click me to go back</button>
