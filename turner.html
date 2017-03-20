@@ -12,6 +12,13 @@
       h1 {
       color: white
       }
+        <canvas id="myCanvas" width="220" height="80" style="border:10px solid #000000;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "40px Arial";
+ctx.fillText("Speed Art",10,50);
     </style>
   </head>
   <body>
