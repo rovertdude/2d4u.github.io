@@ -1,41 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-                <h4>   <center>
-  <canvas id="myCanvas" width="220" height="80" style="border:10px solid #000000;">
-Your browser does not support the HTML5 canvas tag.</canvas>
-<script>
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.font = "40px Arial";
-ctx.fillText("Speed Art",10,50);
-  </script></center></h4>
-    <center> <h2>Welcome to my page where I draw and speed it up and you watch, Enjoy!</h2></center>
-      <title>Speedy</title>
-    <style>
-    
-           
-      {
-      background-image: url("http://wallpaper-gallery.net/images/baby-blue-wallpapers/baby-blue-wallpapers-24.jpg");
-    }
-      p {
-          font-size: 30px;
-      color: purple
-      }
-      h1 {
-          font-size: 15px;
-      color: white
-      }
-      h2 {
-        font-size: 30px;
-        color: purple
-    
-    </style>
-      
-<style>
-  
-
-  .container {
+  <style>
+.container {
     overflow: hidden;
     background-color: #333;
     font-family: Arial;
@@ -89,37 +56,47 @@ ctx.fillText("Speed Art",10,50);
 
 .dropdown-content a:hover {
     background-color: #ddd;
-
 }
-.show{
-  Display: block;
 
+.show {
+    display: block;
+}
 </style>
-  
-    
-  </head>
-  <body>
-
-   <audio autoplay loop>
-  <source src="audio/broccoli.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio> 
-     <div class="container">
+ 
+      <title>Speedy</title>
+    <style>
+    body {
+      background-image: url("http://wallpaper-gallery.net/images/baby-blue-wallpapers/baby-blue-wallpapers-24.jpg");
+    }
+      p {
+          font-size: 30px;
+      color: purple
+      }
+      h1 {
+          font-size: 15px;
+      color: white
+      </style></head>
+       <body>
+       <div class="container">
   <div class="dropdown">
     <button class="dropbtn" onclick="myFunction()">Dropdown</button>
     <div class="dropdown-content" id="myDropdown">
-      <a href="https://4some.github.io/index">Home page</a>
+      <a href="https://4some.github.io/index">Home Page</a>
       <a href="https://4some.github.io/honey">Honey?</a>
+      
     </div>
   </div> 
 </div>
 
-  <script>
-  function myFunction() {
+
+
+<script>
+
+function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
-   window.onclick = function(e) {
+window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
     var myDropdown = document.getElementById("myDropdown");
       if (myDropdown.classList.contains('show')) {
@@ -127,12 +104,25 @@ Your browser does not support the audio element.
       }
   }
 }
-
- 
-  
-   
-    
-      
-    </script>
+</script>
+    <center>
+  <canvas id="myCanvas" width="220" height="80" style="border:10px solid #000000;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "40px Arial";
+ctx.fillText("Speed Art",10,50);
+    </script></center>
+    <center>    
+    <h1>Fires45<h1>
+    </center>
+  <center>
+  <p>Hi this is my page were I film me drawing and I speed it up and you watch me. I hope that you enjoy!</p>
+    </center>
+        <audio autoplay loop>
+  <source src="audio/broccoli.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
       </body>
 </html>
