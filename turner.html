@@ -4,7 +4,6 @@
   
 <style>
 function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
 }
   .container {
     overflow: hidden;
@@ -62,7 +61,8 @@ function myFunction() {
     background-color: #ddd;
     overflow: hidden;
 }
-
+.show{
+  Display: block;
 
 </style>
     <title>Speedy</title>
@@ -81,15 +81,7 @@ function myFunction() {
       h2 {
         font-size: 30px;
         color: purple
-    </style>
-    
-  </head>
-  <body>
-   <audio autoplay loop>
-  <source src="audio/broccoli.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio> 
-    <div class="container">
+          <div class="container">
   
     <div class="dropdown">
       <button class="dropbtn" onclick="myFunction()">Dropdown</button>
@@ -100,6 +92,15 @@ Your browser does not support the audio element.
       </div>
     </div> 
   </div>
+    </style>
+    
+  </head>
+  <body>
+   <audio autoplay loop>
+  <source src="audio/broccoli.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio> 
+  
 <h4>   <center>
   <canvas id="myCanvas" width="220" height="80" style="border:10px solid #000000;">
 Your browser does not support the HTML5 canvas tag.</canvas>
@@ -116,11 +117,14 @@ ctx.fillText("Speed Art",10,50);
   /* When the user clicks on the button, 
   toggle between hiding and showing the dropdown content */
   function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-  }
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 
+   
+    
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
+
+   window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
     var myDropdown = document.getElementById("myDropdown");
       if (myDropdown.classList.contains('show')) {
