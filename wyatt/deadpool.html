@@ -9,7 +9,7 @@
     var looper;
     var degrees=0;
     function rotateAnimation(el,speed){
-      var elem = document.getElementById(el);
+      var myImage = document.getElementById(el);
      if(navigator.userAgent.match("Chrome")){
       myImage.style.WebkitTransform  = "rotate("+degrees+"deg)";
      }else if(navigator.userAgent.match("Firefox")){
