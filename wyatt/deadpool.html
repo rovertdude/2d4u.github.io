@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<!DOCTYPE php>
+<?php
+if ($_POST)
+$name= $_POST['name'];
+?>
 <html>
 <center><head>
 <title>Deadpool</title>
@@ -29,9 +33,22 @@
       document.getElementById("status").innerHTML = "rotate("+degrees+"deg)";
     }
   </script>  
-  <center><div id=bann class=hyperlinks><a href="https://4some.github.io/" >Back to Hub</a></div></center>
-  <div id=leftnav><img src="/wyatt/images/0.jpg" alt="sucks that you can't see this:(" ></div>
-  <div id=rightnav><img src="/wyatt/images/0.jpg" alt="stupid get a new computer!!!. J.K. this is just a picture of Deadpool"></div>
+  <center><div id=bann class=hyperlinks>
+    <a href="https://4some.github.io/" >Back to Hub</a>
+    <a href="https://play.spotify.com/">Bad Ass Free Audio</a>
+    <a href="https://www.youtube.com/"> You Tube</a>
+  </div></center>
+  <div id=leftnav>
+    <img src="/wyatt/images/0.jpg" alt="sucks that you can't see this:(" >
+    <form action="" method="POST">
+      Comments: <textarea rows="10" cols="30" name= "commentContent"></textarea><br>
+      Name:<input type ="text" name="name"><br>
+      <input type="submit" value= "Post!"><br>
+    </form>  
+  </div>
+  <div id=rightnav>
+    <img src="/wyatt/images/0.jpg" alt="stupid get a new computer!!!. J.K. this is just a picture of Deadpool"> 
+  </div>
   <style>
     
     #bann{
@@ -127,7 +144,7 @@
   </audio>
     <div id=pram>
       <p><center>I will Be posting bad ass rock and roll on this page!!!!<br>
-        the muisic, "through the fire and flames", will stop after one play.<br>
+        The muisic, "through the fire and flames", will stop after one play.<br>
         You are then free to watch any of the videos on the site."</center></p>
       <img id="myImage" src="/wyatt/images/bb76ab_e4eb89e73bf9916d7208d0bb8a8e48e4.jpg_srz_500_700_85_22_0.50_1.20_0.00_jpg_srz.jpg
       "alt="this is a cool pic"><iframe width="480" height="240" src="https://www.youtube.com/embed/etAIpkdhU9Q" frameborder="2" allowfullscreen></iframe>
