@@ -65,10 +65,13 @@
       width:500px;
       border-radius:30px;
     }
+    .dropdownContent{
+    display:none;
+    }
     .dropdownContent a{
       color:white;
       display:none;
-      position:absolute;
+      position: absolute;
       background-color:black;
       font-size:30px;
       text-decoration:overline;
@@ -92,6 +95,9 @@
     }
     .hyperlinks a:hover .dropdownContent a{
       display:block;
+    }
+    .hyperlinks a:hover .dropdownContent{
+     display:block;
     }
     #headerline{
       width:1249px;
