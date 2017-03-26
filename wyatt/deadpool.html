@@ -66,11 +66,10 @@
       border-radius:30px;
     }
     .dropdownContent{
-    display:none;
+    opacity:0;
     }
     .dropdownContent a{
       color:white;
-      display:none;
       position: absolute;
       background-color:black;
       font-size:30px;
@@ -93,11 +92,8 @@
     .hyperlinks a:hover {
       background-color:purple;
     }
-    .hyperlinks a:hover .dropdownContent a{
-      display:block;
-    }
     .hyperlinks a:hover .dropdownContent{
-     display:block;
+     opacity:1;
     }
     #headerline{
       width:1249px;
