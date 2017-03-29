@@ -2,6 +2,11 @@
 <html>
   <head>
   <style>
+    div.fixed {
+  position: fixed
+  </style>
+  <style>
+
  #random{
     width:700px;
     height:1000px;
@@ -20,7 +25,6 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-
 }
 .dropdown {
     float: left;
@@ -52,7 +56,6 @@
     text-align: left;
 }
 .dropdown-content a:hover {
-
   background-color: #ddd;
 }
 .show {
@@ -69,13 +72,13 @@
           font-size: 30px;
       color: purple
 /      }
-
       h1 {
           font-size: 15px;
       color: white
       </style></head>
        <body>
-     <center>
+   <div class="fixed">
+   <center>
        <div class="container">
   <div class="dropdown">
     <button class="dropbtn" onclick="myFunction()">Menu</button>
@@ -101,7 +104,7 @@ window.onclick = function(e) {
       }
   }
 }
-         </script></center>
+         </script></center></div>
          <br />
      <center>    <div id="random">
     <center>
