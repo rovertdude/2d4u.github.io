@@ -63,7 +63,7 @@ function myTimer() {
     var d = new Date();
     document.getElementById("demo").innerHTML = d.toLocaleTimeString();
 }
-</script>
+      </script>
       <button onclick="w3.toggleShow('#body')">Click to toggle the rest of the page on/off</button>
       <p>My favorite website</p>
       <a href="http://www.sealspin.com/">sealspin.com</a><hr>
@@ -76,6 +76,7 @@ function myTimer() {
 ● Label Channel: http://youtube.com/TastyNetwork<br>
 ● Album Download: http://tasty.network/001album
 </h2>
+         <button id="paudio" onclick="playAudio()">Play audio</button>
     </center>
   </div><center><header>
   <center>
@@ -99,9 +100,13 @@ ctx.fillText("Fox's Page",10,50);
       <button>Click me to go back</button>
     </form>
   </div>
-   <audio autoplay loop>
-  <source src="/fox/audio/windfall.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
+    <script>
+    var audio = new Audio('windfall.mp3');
+    audio.loop = true;
+    var playAudio = function() {
+        audio.play();
+    }
+    document.getElementById("paudio").click()
+    </script>
   </body>
 </html>
