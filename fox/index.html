@@ -7,16 +7,16 @@
 <script src="https://www.w3schools.com/lib/w3.js"></script>
   <style>
     header {
-  position: fixed;
-  width: 100%;
-  text-align: center;
-  font-size: 72px;
-  line-height: 108px;
+      position: fixed;
+      width: 100%;
+      text-align: center;
+      font-size: 72px;
+      line-height: 108px;
       width: 230px;
-  height: 90px;
-  background-color: orange;
-  font-family: verdana;
-}
+      height: 90px;
+      background-color: orange;
+      font-family: verdana;
+    }
     button {
       font-family: verdana;
       font-size: 14px;
@@ -39,7 +39,7 @@
     #rightnav {
       background-color: white;
       width: 440px;
-      height: 1000px;
+(      height: 1000px;
       float: right;
       padding: 0px;
       margin: 0 0;
@@ -55,13 +55,13 @@
         <button>Send me an email!</button>
       </form>
       
-      <p id="demo"></p>
+      <p id="clock"></p>
   <script>
 var myVar = setInterval(myTimer, 1000);
 
 function myTimer() {
     var d = new Date();
-    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+    document.getElementById("clock").innerHTML = d.toLocaleTimeString();
 }
       </script>
       <button onclick="w3.toggleShow('#body')">Click to toggle the rest of the page on/off</button>
@@ -76,7 +76,7 @@ function myTimer() {
 ● Label Channel: http://youtube.com/TastyNetwork<br>
 ● Album Download: http://tasty.network/001album
 </h2>
-         <button id="paudio" onclick="playAudio()">Play audio</button>
+         <button onclick="playAudio()">Play audio (mobile)</button>
     </center>
   </div><center><header>
   <center>
@@ -100,13 +100,15 @@ ctx.fillText("Fox's Page",10,50);
       <button>Click me to go back</button>
     </form>
   </div>
+  <audio autoplay loop>
+  <source src="audio/windfall.mp3" type="audio/mpeg">
+  </audio>
     <script>
     var audio = new Audio('windfall.mp3');
     audio.loop = true;
     var playAudio = function() {
         audio.play();
     }
-    document.getElementById("paudio").click()
     </script>
   </body>
 </html>
