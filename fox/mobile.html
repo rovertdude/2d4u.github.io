@@ -36,9 +36,8 @@
     }
 </style>
 </head>
-<body>
-      <center><header>
-  <center>
+<body><center>
+      <header>
   <canvas id="myCanvas" width="220" height="80" style="border:10px solid #000000;">
 Your browser does not support the HTML5 canvas tag.</canvas>
 <script>
@@ -46,7 +45,27 @@ var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 ctx.font = "40px Arial";
 ctx.fillText("Fox's Page",10,50);
-    </script></center></header></center><br><br><br><br>
-<p>The mobile version of this page is under development.<br> Check back soon!</p>
-</body>
+    </script></header><br><br><br><br>
+<form action="mailto:foxishdabest@gmail.com">
+        <button>Send me an email!</button>
+      </form>
+      <p id="clock"></p>
+  <script>
+var myVar = setInterval(myTimer, 1000);
+function myTimer() {
+    var d = new Date();
+    document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+}
+      </script>
+      <button onclick="goBack()">Click me to go back</button>
+      <form action="/mobile1.html">
+            <button>Click me to view in Desktop mode</button>
+      </form>
+      <script>
+      function goBack() {
+      history.back();
+      }
+      </script>
+      <p>My Favorite Website</p>
+      <a href="http://www.sealspin.com/">http://www.sealspin.com/</a></center></body>
 </html>
