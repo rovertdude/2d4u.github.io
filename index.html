@@ -7,6 +7,7 @@ Do not edit the index.html file unless given permission by Dylan "Fox" Rosseland
 <head>
 <link href="images/favicon.ico" rel="icon">
 <link href="images/favicon.ico" rel="shortcut icon">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
 <title>2D4U Linkhub</title>
   <style>
     #leftnav {
@@ -68,13 +69,20 @@ Do not edit the index.html file unless given permission by Dylan "Fox" Rosseland
       </form>
      <hr>
   </center></div>
-  <center>
+  <center><div id="body">
     <h1>Welcome to 2D4U</h1>
     <p>More quality content coming soon!</p>
     <form action="/application">
     <button>Apply for a page!</button>
     </form>
-  </center>
+    </div>
+    </center>
+  <script>
+  function fullscreen() {
+w3.hide('#leftnav');
+document.getElementById("body").innerHTML = "<center><h1>Links</h1><hr><h2>Original Memers</h2><form action="/fox/redirect-2.html"><button>Dylan's</button></form><form action="/fires45/turner.html"><button>Ashton's</button></form><form action="/wyatt/deadpool.html"><button>Wyatt's</button></form><form action="/oliver/zwissey.html"><button>Oliver's</button></form><hr><h2>New Memers</h2><form action="/error.html"><button>Gavin's</button></form><hr><h2>GitHub Source</h2><form action="https://github.com/2d4u/2d4u.github.io"><button>GitHub</button></form><hr></center>";
+}
+  </script>
   <audio autoplay loop>
   <source src="audio/yritws.mp3" type="audio/mpeg">
 Welcome to the Official 2D4U (4some) Website!
