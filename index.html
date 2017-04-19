@@ -39,6 +39,9 @@ Do not edit the index.html file unless given permission by Dylan "Fox" Rosseland
     body {
       background-color: lightgray;
     }
+    body.fullscreen {
+      background-color: lightblue;
+    }
   </style>
 </head>
 <body onload="hideBody2()">
@@ -108,6 +111,7 @@ Do not edit the index.html file unless given permission by Dylan "Fox" Rosseland
         <button>GitHub</button>
       </form>
      <hr>
+      <button onclick="javascript:history.go(0)">Click me to go back</button>
   </center>
   </div>
   <script>
@@ -115,6 +119,7 @@ Do not edit the index.html file unless given permission by Dylan "Fox" Rosseland
       w3.hide('#leftnav');
       w3.hide('#body');
       w3.show('#body2');
+      document.body.className = "fullscreen";
     }
     function hideBody2() {
       w3.show('#leftnav');
