@@ -41,7 +41,7 @@ Do not edit the index.html file unless given permission by Dylan "Fox" Rosseland
     }
   </style>
 </head>
-<body onload="hideBody1()">
+<body onload="hideBody2()">
   <div id="leftnav">
    <center>
 <h1>Links</h1>
@@ -112,11 +112,14 @@ Do not edit the index.html file unless given permission by Dylan "Fox" Rosseland
   </div>
   <script>
     function fullScreen() {
-    w3.hide('#leftnav');
-    w3.show('#body1');
+      w3.hide('#leftnav');
+      w3.hide('#body');
+      w3.show('#body2');
     }
-    function hideBody1() {
-      w3.hide('#body1');
+    function hideBody2() {
+      w3.show('#leftnav');
+      w3.show('#body');
+      w3.hide('#body2');
     }
   </script>
   <audio autoplay loop>
