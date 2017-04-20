@@ -11,6 +11,16 @@ Do not edit the index.html file unless given permission by Dylan "Fox" Rosseland
 <script src="jquery-3.2.0.min.js"></script>
 <title>2D4U Linkhub</title>
   <style>
+    h1 {
+      font-family: verdana;
+      font-size: 40px;
+      color: white;
+    }
+    h2 {
+      font-family: verdana;
+      font-size: 20px;
+      color: white;
+    }
     #leftnav {
       background-color: black;
       width: 200px;
@@ -23,27 +33,25 @@ Do not edit the index.html file unless given permission by Dylan "Fox" Rosseland
     button {
       font-family: verdana;
       font-size: 14px;
+      
     }
-    h1 {
+    h3 {
       font-family: verdana;
       font-size: 40px;
-      color: white;
     }
-    h2 {
+    h4 {
       font-family: verdana;
       font-size: 20px;
-      color: white;
     }
     p {
       font-size: 16px;
       font-family: verdana;
-      color: white;
-    }
-    body {
-      background-image: url("http://i.imgur.com/u9tFGoJ.png");
     }
     body.fullscreen {
       background-color: black;
+    }
+    body {
+      background-image: url("http://i.imgur.com/u9tFGoJ.png");
     }
   </style>
 </head>
@@ -85,7 +93,8 @@ Do not edit the index.html file unless given permission by Dylan "Fox" Rosseland
      <hr>
      <button onclick="fullScreen()">Fullscreen</button>
   </center></div>
-  <center><div id="body">
+  <center>
+    <div id="body">
     <h1>Welcome to 2D4U</h1>
     <p>More quality content coming soon!</p>
     <form action="/application">
@@ -95,9 +104,9 @@ Do not edit the index.html file unless given permission by Dylan "Fox" Rosseland
     </center>
   <div id="body2">
     <center>
-<h1>Links</h1>
+<h3>Links</h3>
 <hr>
-     <h2>Original Memers</h2>
+     <h4>Original Memers</h4>
       <form action="/fox/redirect-2.html">
         <button>Dylan's</button>
       </form>
@@ -111,12 +120,12 @@ Do not edit the index.html file unless given permission by Dylan "Fox" Rosseland
         <button>Oliver's</button>
       </form>
      <hr>
-    <h2>New Memers</h2>
+    <h4>New Memers</h4>
       <form action="/gavin">
         <button>Gavin's</button>
      </form>
         <hr>
-     <h2>GitHub Source</h2>
+     <h4>GitHub Source</h4>
       <form action="https://github.com/2d4u/2d4u.github.io">
         <button>GitHub</button>
       </form>
@@ -129,7 +138,7 @@ Do not edit the index.html file unless given permission by Dylan "Fox" Rosseland
       w3.hide('#leftnav');
       w3.hide('#body');
       w3.show('#body2');
-      document.body.className = "fullscreen";
+      document.body.className = "";
     }
   </script>
   
