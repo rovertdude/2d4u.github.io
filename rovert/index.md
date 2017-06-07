@@ -1,4 +1,6 @@
-<head><link rel="spreadsheet" href="/IMGAY.css"></head>
+<head>
+  <link rel="spreadsheet" href="/IMGAY.css">
+</head>
 
 # pug the wug wug's page
 ## My weird info
